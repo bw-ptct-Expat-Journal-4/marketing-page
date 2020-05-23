@@ -130,22 +130,39 @@ table {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+body {
+  background-image: url(/assets/journey.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  background: rgba(0, 0, 0, 0.3);
+}
+header nav {
+  font-size: 2rem;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/journey.jpg);
+  margin-top: 30vh;
 }
-header h1 {
+section h1 {
   font-size: 12rem;
+  display: flex;
 }
-header nav {
-  font-size: 3rem;
-}
-header nav a {
-  text-decoration: none;
-}
-header button {
+section button {
+  flex-direction: row;
   font-size: 4rem;
 }
