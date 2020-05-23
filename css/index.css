@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  background-color: #1D3557;
+  color: #F1FAEE;
+  text-decoration: none;
+}
+.head {
+  background: -webkit-linear-gradient(#1D3557, #457B9D, #E63946, #F1FAEE);
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+.head form {
+  margin-top: 70px;
+  height: 20px;
+  margin-left: 650px;
+  display: flex;
+  flex-direction: row;
+  color: #A8DADC;
+}
+.head h1 {
+  color: #F1FAEE;
+  text-shadow: -2px 0 #E63946, 0 2px #E63946, 2px 0 #E63946, 0 -2px #E63946;
+  background: -webkit-linear-gradient(#1D3557, #457B9D, #E63946, #F1FAEE);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 40px;
+  padding-left: 50px;
+}
+.head button {
+  background-color: #1D3557;
+  border: none;
+  text-decoration: none;
+  height: 30px;
+  border-radius: 80%;
+  margin-left: 10px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.head button a {
+  font-size: 16px;
+  background-color: #1D3557;
+  color: #A8DADC;
+  text-decoration: none;
+}
+.sign-up {
+  background: -webkit-linear-gradient(#F1FAEE, #A8DADC, #457B9D, #1D3557);
+  height: 500px;
+}
+.sign-up h3 {
+  font-size: 24px;
+  color: #1D3557;
+}
+.sign-up form {
+  color: #1D3557;
+}
+.sign-up form button {
+  background-color: #1D3557;
+  border: none;
+  text-decoration: none;
+  height: 30px;
+  border-radius: 80%;
+}
+.sign-up form button a {
+  font-size: 16px;
+  background-color: #1D3557;
+  color: #A8DADC;
+  text-decoration: none;
+}
