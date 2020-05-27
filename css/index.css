@@ -126,16 +126,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-a {
+.foot {
+  background-color: #1D3557;
+  padding-bottom: 25px;
+}
+.foot a {
   background-color: #1D3557;
   color: #F1FAEE;
   text-decoration: none;
+  padding-right: 30px;
+  padding-left: 20px;
 }
 .head {
   background: -webkit-linear-gradient(#1D3557, #457B9D, #E63946, #F1FAEE);
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   height: 300px;
+  padding-bottom: 10px;
 }
 .head form {
   margin-top: 70px;
@@ -145,10 +152,15 @@ a {
   flex-direction: row;
   color: #A8DADC;
 }
+@media (max-width:1400px) {
+  .head form {
+    margin-left: 500px;
+    color: #1D3557;
+  }
+}
 .head h1 {
   color: #F1FAEE;
   text-shadow: -2px 0 #E63946, 0 2px #E63946, 2px 0 #E63946, 0 -2px #E63946;
-  background: -webkit-linear-gradient(#1D3557, #457B9D, #E63946, #F1FAEE);
   padding-top: 50px;
   padding-bottom: 50px;
   font-size: 40px;
@@ -170,16 +182,62 @@ a {
   color: #A8DADC;
   text-decoration: none;
 }
+.head p {
+  color: #1D3557;
+  font-size: 24px;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+.midsect {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.midsect .imgs {
+  background: -webkit-linear-gradient(#F1FAEE, #A8DADC, #457B9D, #1D3557);
+  padding-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.midsect .imgs #img1 {
+  width: 300px;
+  height: 200px;
+  padding-left: 25px;
+}
+.midsect .imgs #img2 {
+  width: 300px;
+  height: 250px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
+.midsect .imgs #img3 {
+  width: 300px;
+  height: 400px;
+  padding-left: 25px;
+}
+.midsect .imgs #img4 {
+  width: 350px;
+  height: 300px;
+  padding-left: 25px;
+  padding-top: 20px;
+}
 .sign-up {
   background: -webkit-linear-gradient(#F1FAEE, #A8DADC, #457B9D, #1D3557);
-  height: 500px;
+  height: 700px;
+  width: 700px;
 }
-.sign-up h3 {
-  font-size: 24px;
+.sign-up h2 {
+  font-size: 34px;
+  text-shadow: -1.5px 0 #457B9D, 0 1.5px #457B9D, 1.5px 0 #457B9D, 0 -1.5px #457B9D;
   color: #1D3557;
+  padding-bottom: 20px;
 }
 .sign-up form {
+  padding-right: 190px;
+  width: 200px;
   color: #1D3557;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .sign-up form button {
   background-color: #1D3557;

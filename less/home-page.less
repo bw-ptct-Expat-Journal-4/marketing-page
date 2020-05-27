@@ -1,60 +1,120 @@
-
-    
-
 .head{
     background: -webkit-linear-gradient(@d-blue, @blue,@red,@white);
     display: flex;
-    flex-direction: row;height:300px;
+    flex-flow: row wrap;
+    height:300px;
+    padding-bottom: 10px;
 
-    form{margin-top: 70px;
+    form{
+        margin-top: 70px;
         height:20px;
         margin-left: 650px;
         display: flex;
         flex-direction: row;
         color: @l-blue;
 
-
-    }
+        @media @mobile4{
+            margin-left:500px;
+            color: @d-blue;
+        }
+        @media @mobile3{
+            
+        }
+                
+        }
+        
     
-
+    
     h1{
     color:@white;
-    text-shadow: -2px 0 @red, 0 2px @red, 2px 0 @red, 0 -2px @red;
-    background: -webkit-linear-gradient(@d-blue, @blue,@red,@white);
-  
+    text-shadow: -2px 0 @red, 0 2px @red, 2px 0 @red, 0 -2px @red;  
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 40px;
     padding-left: 50px;
     }
 
-    button{.button(@d-blue);
+    button{
+        .button(@d-blue);
         text-decoration: none;
         height:30px;
         border-radius: 80%;
         margin-left: 10px;
         padding-right: 25px;
         padding-left: 25px;
+        }
+
+    p{
+    color: @d-blue;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 50px;
+    }
+}
+.midsect{
+    display: flex;
+    flex-direction: row-reverse;
+
+    .imgs{
+        background: -webkit-linear-gradient(@white, @l-blue, @blue, @d-blue);
+        padding-bottom: 20px;
+        display: flex;
+        flex-flow: row wrap;
         
+        #img1{
+            width: 300px;
+            height:200px;
+            padding-left:25px;
+        }
+
+        #img2{
+            width: 300px;
+            height:250px;
+            padding-left:25px;
+            padding-top: 20px;
+        }
+
+        #img3{
+            width: 300px;
+            height:400px;
+            padding-left:25px;
+        } 
+
+        #img4{
+            width: 350px;
+            height:300px;
+            padding-left:25px;
+            padding-top:20px;
         }
     }
-    
+}
+
 .sign-up{
     background: -webkit-linear-gradient(@white, @l-blue, @blue, @d-blue);
-    height:500px;
+    height:700px;
+    width: 700px;
 
-    h3{font-size: 24px;
-        color: @d-blue;
-        
-}
+    h2{
+        font-size: 34px;
+        text-shadow: -1.5px 0 @blue, 0 1.5px @blue, 1.5px 0 @blue, 0 -1.5px @blue;
+        color: @d-blue; 
+        padding-bottom: 20px;       
+    }
     
     form{
+        padding-right: 190px;
+        width:200px;
         color: @d-blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     
-
-    button{.button(@d-blue);
-        text-decoration: none;
-        height:30px;
-        border-radius: 80%;
-    }}
+        button{
+            .button(@d-blue);
+            text-decoration: none;
+            height:30px;
+            border-radius: 80%;
+        }
+    }
 }
+
