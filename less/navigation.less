@@ -3,7 +3,23 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(29, 53, 87, .3);
+
+    @media@mobile{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #logo{
+        width: 50px;
+        height: 58px;
+
+        @media@mobile{
+            width: 20%;
+            height: auto;
+            margin-top: 2%;
+        }
+    }
 
     nav{
         font-size: 2rem;
@@ -11,9 +27,26 @@ header{
         display: flex;
         justify-content: space-evenly;
 
+        @media@mobile{
+            flex-direction: column;
+            justify-content: center;
+            width: 80%;
+            margin: 1% auto;
+        }
+
         a{
             text-decoration: none;
-            color: white;
+            color: @honeydew;
+
+            @media@mobile{
+                background-color: @prussian-blue;
+                margin: 4% auto;
+                width: 70%;
+                text-align: center;
+                padding: 2%;
+                font-size: 2.4rem;
+                border-radius: 50px;
+            }
         }
     }
 }    

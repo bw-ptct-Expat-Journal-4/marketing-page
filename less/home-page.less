@@ -1,12 +1,28 @@
 .titleSection{
     .display(column);
     margin-top: 30vh;
+    padding: 0;
+
+    @media@mobile{
+        margin: 0 auto;
+    }
 
     h1{
-        font-size: 12rem;
         display: flex;
+        justify-content: center;
+        font-size: 12rem;
         margin-bottom: 1%;
+        background-color: @honeydew;
+        color: @imperial-red;
+        width: 100%;
+
+        @media@mobile{
+            font-size: 8rem;
+            margin: 10% auto;
+            text-align: center;
+        }
     }
+    
 
     .buttons{
         display: flex;
@@ -14,10 +30,27 @@
         margin-top: 1%;
         justify-content: space-between;
         flex-direction: row;
+        background-color: transparent;
+
+        @media@mobile{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
 
         button{
             font-size: 1.6rem;
             padding: 1% 50px;
+            border-radius: 20px;
+
+            @media@mobile{
+                width: 50%;
+                height: auto;
+                margin: 2% auto;
+                border-radius: 10px;
+                font-size: 2.4rem;
+            }
         }
     }
 }

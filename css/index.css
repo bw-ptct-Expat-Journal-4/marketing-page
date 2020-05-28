@@ -142,7 +142,24 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1%;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(29, 53, 87, 0.3);
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+header #logo {
+  width: 50px;
+  height: 58px;
+}
+@media (max-width: 500px) {
+  header #logo {
+    width: 20%;
+    height: auto;
+    margin-top: 2%;
+  }
 }
 header nav {
   font-size: 2rem;
@@ -150,9 +167,28 @@ header nav {
   display: flex;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 1% auto;
+  }
+}
 header nav a {
   text-decoration: none;
-  color: white;
+  color: #f1faee;
+}
+@media (max-width: 500px) {
+  header nav a {
+    background-color: #1d3557;
+    margin: 4% auto;
+    width: 70%;
+    text-align: center;
+    padding: 2%;
+    font-size: 2.4rem;
+    border-radius: 50px;
+  }
 }
 .titleSection {
   display: flex;
@@ -160,11 +196,28 @@ header nav a {
   justify-content: center;
   align-items: center;
   margin-top: 30vh;
+  padding: 0;
+}
+@media (max-width: 500px) {
+  .titleSection {
+    margin: 0 auto;
+  }
 }
 .titleSection h1 {
-  font-size: 12rem;
   display: flex;
+  justify-content: center;
+  font-size: 12rem;
   margin-bottom: 1%;
+  background-color: #f1faee;
+  color: #e63946;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .titleSection h1 {
+    font-size: 8rem;
+    margin: 10% auto;
+    text-align: center;
+  }
 }
 .titleSection .buttons {
   display: flex;
@@ -172,10 +225,29 @@ header nav a {
   margin-top: 1%;
   justify-content: space-between;
   flex-direction: row;
+  background-color: transparent;
+}
+@media (max-width: 500px) {
+  .titleSection .buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
 }
 .titleSection .buttons button {
   font-size: 1.6rem;
   padding: 1% 50px;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .titleSection .buttons button {
+    width: 50%;
+    height: auto;
+    margin: 2% auto;
+    border-radius: 10px;
+    font-size: 2.4rem;
+  }
 }
 section {
   display: flex;
@@ -190,12 +262,13 @@ section div {
   width: 40%;
   background-color: #f1faee;
   padding: 1%;
-  border-radius: 2%;
+  border-radius: 25%;
 }
 section div h2 {
   font-size: 8rem;
   margin-bottom: 5%;
   color: #e63946;
+  text-decoration: underline;
 }
 section div p {
   font-size: 2rem;
