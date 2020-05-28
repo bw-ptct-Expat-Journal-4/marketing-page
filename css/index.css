@@ -174,7 +174,7 @@ header nav a {
   flex-direction: row;
 }
 .titleSection .buttons button {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding: 1% 50px;
 }
 section {
@@ -188,13 +188,18 @@ section {
 section div {
   text-align: center;
   width: 40%;
+  background-color: #f1faee;
+  padding: 1%;
+  border-radius: 2%;
 }
 section div h2 {
   font-size: 8rem;
   margin-bottom: 5%;
+  color: #e63946;
 }
 section div p {
   font-size: 2rem;
+  color: #457b9d;
 }
 section img {
   width: 40%;
