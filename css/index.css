@@ -126,12 +126,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-nav {
+.Home nav {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 200px;
 }
-nav a {
+.Home nav a {
+  margin-right: 20px;
+  color: #F1FAEE;
+  font-size: 80px;
+  text-decoration: none;
+}
+.About nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.About nav a {
   margin-right: 20px;
   color: #F1FAEE;
   font-size: 80px;
@@ -139,54 +148,52 @@ nav a {
 }
 .Home .head {
   background: -webkit-linear-gradient(#1D3557, #E63946);
-  height: 305px;
-  max-width: 100%;
-  padding-bottom: 25px;
 }
 .Home .head h1 {
-  margin-left: 700px;
+  font-size: 80px;
+  text-align: center;
   color: #F1FAEE;
   text-shadow: -2px 0 #457B9D, 0 2px #457B9D, 2px 0 #457B9D, 0 -2px #457B9D;
-  padding-bottom: 100px;
-  font-size: 120px;
-  padding-left: 50px;
+  padding-top: 10%;
+}
+.Home .head a {
+  font-size: 40px;
 }
 .Home .head p {
-  color: #1D3557;
+  color: #F1FAEE;
   font-size: 40px;
-  padding-left: 260px;
-  padding-bottom: 5px;
+  padding: 10%;
 }
-.Home .head button {
+.Home .midsect {
+  background: -webkit-linear-gradient(#E63946, #F1FAEE, #A8DADC, #457B9D, #1D3557);
+}
+.Home .midsect #imgmain {
+  padding-top: 10%;
+  padding-bottom: 12%;
+  width: 100vw;
+  mix-blend-mode: multiply;
+}
+.Home .midsect button {
   background-color: #1D3557;
   border: none;
   text-decoration: none;
-  height: 80px;
-  width: 200px;
+  height: 7vh;
+  width: 20vw;
   border-radius: 80%;
 }
-.Home .head button a {
+.Home .midsect button a {
   font-size: 16px;
   background-color: #1D3557;
   color: #A8DADC;
   text-decoration: none;
 }
-.Home .head button a {
+.Home .midsect button a {
   color: #A8DADC;
-  font-size: 24px;
+  font-size: 40px;
 }
-.Home .head #button1 {
-  margin-left: 775px;
-  margin-right: 10px;
-}
-.Home .midsect {
-  background: -webkit-linear-gradient(#E63946, #F1FAEE, #A8DADC, #457B9D, #1D3557);
-  height: 610px;
-}
-.Home .midsect #img5 {
-  width: 100%;
-  position: absolute;
-  mix-blend-mode: multiply;
+.Home .midsect #button1 {
+  margin-left: 30%;
+  margin-right: 10%;
 }
 .About .head {
   background: -webkit-linear-gradient(#1D3557, #E63946);
@@ -205,12 +212,11 @@ nav a {
   background: -webkit-linear-gradient(#E63946, #F1FAEE, #A8DADC, #457B9D, #1D3557);
 }
 .About .midsect h2 {
-  color: #1D3557;
+  color: #F1FAEE;
   font-size: 40px;
 }
 .About .midsect #imgmain {
   width: 100vw;
-  height: 100vh;
   mix-blend-mode: multiply;
 }
 .About .midsect .attributes {
@@ -249,34 +255,29 @@ nav a {
 }
 .Home .foot {
   background-color: #1D3557;
-  height: 150px;
+  height: 10vh;
 }
-.Home .foot a {
-  background-color: #1D3557;
+.Home .foot nav {
+  display: flex;
+  justify-content: center;
+}
+.Home .foot nav a {
+  margin-right: 20px;
   color: #F1FAEE;
-  font-size: 24px;
+  font-size: 40px;
   text-decoration: none;
-  padding-right: 30px;
-  padding-left: 20px;
-}
-@media (max-width:1000px) {
-  .Home .foot {
-    height: 75px;
-  }
-}
-@media (min-height:1000px) {
-  .Home .foot {
-    height: 500px;
-  }
-  .Home .foot a {
-    font-size: 80px;
-  }
 }
 .About .foot {
   background-color: #1D3557;
   height: 10vh;
 }
-.About .foot a {
+.About .foot nav {
+  display: flex;
+  justify-content: center;
+}
+.About .foot nav a {
+  margin-right: 20px;
   color: #F1FAEE;
   font-size: 40px;
+  text-decoration: none;
 }

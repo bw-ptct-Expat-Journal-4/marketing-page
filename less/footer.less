@@ -1,33 +1,36 @@
 .Home{.foot{
-    background-color: @d-blue;
-    height: 150px;
+    background-color: @d-blue;height:10vh;
 
-    a{
-    background-color: @d-blue;
-    color: @white;
-    font-size: 24px;
-    text-decoration: none;
-    padding-right:30px;
-    padding-left: 20px;
-    }
 
-    @media @mobiletab{
-        height:75px;
-    }
-    @media @mobileheight{
-        height:500px;
-
+    nav{
+        display: flex;
+        justify-content: center;
+   
+        
         a{
-            font-size: 80px;
+            margin-right: 20px;
+            color: @white;
+            font-size: 40px;
+            text-decoration: none;
         }
-        }
+    }
 }
 }
 .About{
     .foot{
         background-color: @d-blue;height:10vh;
-        a{color:@white;
-            
-        font-size: 40px;}
+
+
+        nav{
+            display: flex;
+            justify-content: center;
+
+            a{
+                margin-right: 20px;
+                color: @white;
+                font-size: 40px;
+                text-decoration: none;
+            }
+        }
     }
 }
