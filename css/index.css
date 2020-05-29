@@ -211,6 +211,7 @@ header nav a {
   background-color: #f1faee;
   color: #e63946;
   width: 100%;
+  border: 5px solid #a8dadc;
 }
 @media (max-width: 500px) {
   .titleSection h1 {
@@ -226,6 +227,7 @@ header nav a {
   justify-content: space-between;
   flex-direction: row;
   background-color: transparent;
+  border: none;
 }
 @media (max-width: 500px) {
   .titleSection .buttons {
@@ -257,12 +259,30 @@ section {
   margin: 5% auto;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  section {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  section.middleSection {
+    flex-direction: column-reverse;
+  }
+}
 section div {
   text-align: center;
   width: 40%;
   background-color: #f1faee;
+  border: 5px solid #a8dadc;
   padding: 1%;
   border-radius: 25%;
+}
+@media (max-width: 500px) {
+  section div {
+    width: 85%;
+    border-radius: 15%;
+    margin-bottom: 5%;
+  }
 }
 section div h2 {
   font-size: 8rem;
@@ -270,10 +290,27 @@ section div h2 {
   color: #e63946;
   text-decoration: underline;
 }
+@media (max-width: 500px) {
+  section div h2 {
+    font-size: 4.2rem;
+    margin-bottom: 3%;
+  }
+}
 section div p {
   font-size: 2rem;
   color: #457b9d;
 }
+@media (max-width: 500px) {
+  section div p {
+    font-size: 1.6rem;
+    padding: 2%;
+  }
+}
 section img {
   width: 40%;
+}
+@media (max-width: 500px) {
+  section img {
+    width: 90%;
+  }
 }

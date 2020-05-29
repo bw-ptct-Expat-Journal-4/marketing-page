@@ -6,27 +6,59 @@ section {
     margin: 5% auto;
     padding: 2%;
 
+    @media@mobile{
+        flex-direction: column;
+    }
+
+    &.middleSection{
+
+        @media@mobile{
+            flex-direction: column-reverse;
+        }
+    }
+
     div{
         text-align: center;
         width: 40%;
         background-color: @honeydew;
+        border: 5px solid @powder-blue;
         padding: 1%;
         border-radius: 25%;
+
+        @media@mobile{
+            width: 85%;
+            border-radius: 15%;
+            margin-bottom: 5%;
+        }
 
         h2{
             font-size: 8rem;
             margin-bottom: 5%;
             color: @imperial-red;
             text-decoration: underline;
+
+            @media@mobile{
+                font-size: 4.2rem;
+                margin-bottom: 3%;
+            }
         }
 
         p{
             font-size: 2rem;
             color: @steel-blue;
+
+            @media@mobile{
+                font-size: 1.6rem;
+                padding: 2%;
+            }
         }
     }
 
     img{
         width: 40%;
+
+        @media@mobile{
+            width: 90%;
+        }
     }
 }
