@@ -173,13 +173,20 @@ table {
   width: 100vw;
   mix-blend-mode: multiply;
 }
+@media (min-height:1000px) {
+  .Home .midsect #imgmain {
+    height: 40vh;
+  }
+}
 .Home .midsect button {
   background-color: #1D3557;
   border: none;
   text-decoration: none;
-  height: 7vh;
+  height: 8vh;
   width: 20vw;
-  border-radius: 80%;
+  border-radius: 70%;
+  text-shadow: -2px 0 #E63946, 0 2px #E63946, 2px 0 #E63946, 0 -2px #E63946;
+  border: 3px solid #F1FAEE;
 }
 .Home .midsect button a {
   font-size: 16px;
@@ -191,31 +198,44 @@ table {
   color: #A8DADC;
   font-size: 40px;
 }
+@media (max-width:500px) {
+  .Home .midsect button a {
+    font-size: 12px;
+  }
+}
+@media (max-width:1000px) {
+  .Home .midsect button a {
+    font-size: 12px;
+  }
+}
+@media (min-height:1000px) {
+  .Home .midsect button {
+    width: 25vw;
+  }
+}
 .Home .midsect #button1 {
   margin-left: 30%;
   margin-right: 10%;
 }
 .About .head {
   background: -webkit-linear-gradient(#1D3557, #E63946);
-  height: 15vh;
-}
-.About .head h1 {
-  font-size: 80px;
-  text-align: center;
-  color: #F1FAEE;
-  text-shadow: -2px 0 #457B9D, 0 2px #457B9D, 2px 0 #457B9D, 0 -2px #457B9D;
 }
 .About .head a {
   font-size: 40px;
+  padding-top: 10%;
+  padding-bottom: 4%;
 }
 .About .midsect {
   background: -webkit-linear-gradient(#E63946, #F1FAEE, #A8DADC, #457B9D, #1D3557);
 }
 .About .midsect h2 {
   color: #F1FAEE;
-  font-size: 40px;
+  text-shadow: -2px 0 #457B9D, 0 2px #457B9D, 2px 0 #457B9D, 0 -2px #457B9D;
+  font-size: 60px;
+  padding: 4%;
 }
 .About .midsect #imgmain {
+  position: absolute;
   width: 100vw;
   mix-blend-mode: multiply;
 }
@@ -225,6 +245,7 @@ table {
   align-items: center;
   flex-flow: row wrap;
   position: relative;
+  padding-bottom: 20vh;
 }
 .About .midsect #img1 {
   width: 40%;
@@ -256,6 +277,7 @@ table {
 .Home .foot {
   background-color: #1D3557;
   height: 10vh;
+  padding-bottom: 2%;
 }
 .Home .foot nav {
   display: flex;

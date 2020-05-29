@@ -37,61 +37,78 @@
         padding-top: 10%;
         padding-bottom: 12%;
         width: 100vw;
-
         mix-blend-mode: multiply;
 
-
-        
+        @media @mobileheight{
+            height:40vh;
+        }
     }
     button{
         .button(@d-blue);
         text-decoration: none;
-        height:7vh;
+        height:8vh;
         width:20vw;
-        border-radius: 80%;
-        
-        
-        
+        border-radius: 70%;
+        text-shadow: -2px 0 @red, 0 2px @red, 2px 0 @red, 0 -2px @red;
+        border:3px solid @white;
         
         a{
             color:@l-blue;
             font-size: 40px;
+            
+            @media @mobileviewS{
+                font-size: 12px;
+            }
+            @media @mobileviewL{
+                font-size: 12px;
+            }
         }
-        } #button1{margin-left:30%;
-        margin-right:10%}
+        @media @mobileheight{width:25vw;}
+        } 
+        #button1{
+            margin-left:30%;
+            margin-right:10%
+        }
 
 
 
         }
 
+    }
 
 
 
-}
+
+
 
 .About{
     
    
     .head{background: -webkit-linear-gradient(@d-blue,@red);
-        height:15vh;
-        h1{
-            font-size:80px;
-            text-align: center;
-            color: @white;
-            text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue; 
-        }
+        // height:15vh;
+        // h1{
+        //     font-size:80px;
+        //     text-align: center;
+        //     color: @white;
+             
+        // }
         a{
             font-size: 40px;
+            padding-top:10%;
+            padding-bottom: 4%;
+            
         }
     }
     .midsect{
         background: -webkit-linear-gradient(@red,@white, @l-blue, @blue, @d-blue);
         h2{
             color:@white;
-            font-size: 40px;
+            text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
+            font-size: 60px;
+            padding: 4%;
         }
         #imgmain{
-            // position: absolute;
+            position: absolute;
             width: 100vw;
             // height: 100vh;
             mix-blend-mode: multiply;}
@@ -101,7 +118,7 @@
                 align-items: center;
                 flex-flow: row wrap;
                 position: relative;
-                // bottom:120vh;
+                padding-bottom:20vh;
             }
             #img1{
                 // height:50%;
