@@ -1,80 +1,72 @@
 .Home{
     .head{
-    background: -webkit-linear-gradient(@d-blue,@red);
+        background: -webkit-linear-gradient(@d-blue,@red);
 
-    
-    h1{
-        font-size:80px;
-        text-align: center;
-        color: @white;
-        text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
-        padding-top:10% 
-    }
-    a{
-        font-size: 40px;
-    }
-
-    
-
-    p{
-        color: @white;
-        font-size: 40px;
-        padding: 10%;
-
-    }    }
-    
-    
-
-
-
-
-.midsect{
-    background: -webkit-linear-gradient(@red,@white, @l-blue, @blue, @d-blue);
-    // height:610px;
-    
-
-    #imgmain{
-        padding-top: 10%;
-        padding-bottom: 12%;
-        width: 100vw;
-        mix-blend-mode: multiply;
-
-        @media @mobileheight{
-            height:40vh;
+        h1{
+            font-size:80px;
+            text-align: center;
+            color: @white;
+            text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
+            padding-top:10% 
         }
-    }
-    button{
-        .button(@d-blue);
-        text-decoration: none;
-        height:8vh;
-        width:20vw;
-        border-radius: 70%;
-        text-shadow: -2px 0 @red, 0 2px @red, 2px 0 @red, 0 -2px @red;
-        border:3px solid @white;
-        
         a{
-            color:@l-blue;
             font-size: 40px;
-            
-            @media @mobileviewS{
-                font-size: 12px;
-            }
-            @media @mobileviewL{
-                font-size: 12px;
-            }
-        }
-        @media @mobileheight{width:25vw;}
-        } 
-        #button1{
-            margin-left:30%;
-            margin-right:10%
         }
 
-
-
-        }
-
+        p{
+            color: @white;
+            font-size: 40px;
+            padding: 10%;
+        }    
     }
+
+    .midsect{
+        background: -webkit-linear-gradient(@red,@white, @l-blue, @blue, @d-blue);    
+
+        #imgmain{
+            padding-top: 10%;
+            padding-bottom: 12%;
+            width: 100vw;
+            mix-blend-mode: multiply;
+
+            @media @mobileheight{
+                height:40vh;
+            }
+        }
+
+        button{
+            .button(@d-blue);
+            text-decoration: none;
+            height:8vh;
+            width:20vw;
+            border-radius: 70%;
+            text-shadow: -2px 0 @red, 0 2px @red, 2px 0 @red, 0 -2px @red;
+            border:3px solid @white;
+            
+            a{
+                color:@l-blue;
+                font-size: 40px;
+                
+                @media @mobileviewS{
+                    font-size: 12px;
+                }
+
+                @media @mobileviewL{
+                    font-size: 12px;
+                }
+            }
+
+            @media @mobileheight{
+                width:25vw;
+            }
+        } 
+            #button1{
+                margin-left:30%;
+                margin-right:10%
+            }
+    }
+
+}
 
 
 
@@ -85,80 +77,71 @@
     
    
     .head{background: -webkit-linear-gradient(@d-blue,@red);
-        // height:15vh;
-        // h1{
-        //     font-size:80px;
-        //     text-align: center;
-        //     color: @white;
-             
-        // }
+
         a{
             font-size: 40px;
             padding-top:10%;
-            padding-bottom: 4%;
-            
+            padding-bottom: 4%;  
         }
     }
+
     .midsect{
         background: -webkit-linear-gradient(@red,@white, @l-blue, @blue, @d-blue);
+        
         h2{
             color:@white;
             text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
             font-size: 60px;
             padding: 4%;
         }
+
         #imgmain{
             position: absolute;
             width: 100vw;
-            // height: 100vh;
-            mix-blend-mode: multiply;}
-            .attributes{
-                display:flex;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-flow: row wrap;
-                position: relative;
-                padding-bottom:20vh;
-            }
-            #img1{
-                // height:50%;
-                width:40%;
-                // position: relative;
-                // bottom:1200px ;
-                border-radius: 60%;     
-            }
-            #p1{
-                font-size:60px;
-                color:@white;
-                text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
-                // position: relative;
-                // bottom:1600px;
-                // left:600px;
-            }
-            #img2{
-                // height:50%;
-                width:40%;
-                // position: relative;
-                border-radius: 60%;
-            }
-            #p2{
-                font-size:60px;
-                color:@white;
-                text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
-                // position: relative;
-            }
-            #img3{
-                // height:40%;
-                width:40%;
-                // position: relative;
-                border-radius: 80%;
-            }
-            #p3{
-                font-size:60px;
-                color:@white;
-                text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
-                // position: relative;
-            }
+            mix-blend-mode: multiply;
+        }
+
+        .attributes{
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: row wrap;
+            position: relative;
+            padding-bottom:20vh;
+        }
+
+        #img1{
+            width:40%;
+            border-radius: 60%;     
+        }
+
+        #p1{
+            font-size:60px;
+            color:@white;
+            text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
+        }
+           
+        #img2{
+            width:40%;
+            border-radius: 60%;
+        }
+
+        #p2{
+            font-size:60px;
+            color:@white;
+            text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
+        }
+            
+        #img3{
+            width:40%;
+            border-radius: 80%;
+        }
+
+        #p3{
+            font-size:60px;
+            color:@white;
+            text-shadow: -2px 0 @blue, 0 2px @blue, 2px 0 @blue, 0 -2px @blue;
+        }
     }
 }
 
